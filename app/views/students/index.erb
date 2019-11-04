@@ -1,0 +1,11 @@
+<h>List OF Students</h1>
+
+
+<ul>
+<% @students.each do |student| %>
+
+    <li><%=link_to student.to_str, student_path(student)%> </li>
+    <%end%>
+    </ul>
+
+    
